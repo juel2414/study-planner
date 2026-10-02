@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오늘분량 · Today's Dose — 주소가 바뀌었어요</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://juel2414.github.io/todays-dose/">
+  <script>
+    // 예전 주소(study-planner) → 새 주소(todays-dose). 경로 · ?code= · #/join/… 를 그대로 넘긴다
+    (function () {
+      var path = location.pathname.replace(/^\/study-planner/, '/todays-dose');
+      if (path.indexOf('/todays-dose') !== 0) path = '/todays-dose/';
+      location.replace('https://juel2414.github.io' + path + location.search + location.hash);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=https://juel2414.github.io/todays-dose/">
+  <style>body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;background:#e8e8e5;color:#141414;display:grid;place-items:center;min-height:100vh;margin:0;text-align:center}a{color:#3B5BA5;font-weight:700}</style>
+</head>
+<body>
+  <p>오늘분량 주소가 바뀌었어요.<br><a href="https://juel2414.github.io/todays-dose/">juel2414.github.io/todays-dose</a> 로 이동합니다.</p>
+</body>
+</html>
